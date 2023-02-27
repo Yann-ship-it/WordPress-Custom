@@ -14,11 +14,6 @@ wp_enqueue_style( ' add_google_fonts ', ' https://fonts.googleapis.com/css2?fami
 }
 add_action( 'wp_enqueue_scripts', 'add_google_fonts' ); // Hook du lien google pour la font Kanit
 
-function scripts() {
-    wp_enqueue_script( 'burger', get_template_directory_uri() . '/themes/tp wordpress/burger.js', '1.0', true );
-}
-add_action( 'wp_enqueue_scripts', 'scripts' ); // Hook fichier JS
-
 add_theme_support( 'post-thumbnails' ); // afficher image à la une 
 
 /**
