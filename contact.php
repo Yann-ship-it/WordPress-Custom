@@ -12,4 +12,5 @@
     <?php echo apply_shortcodes( '[wpgmza id="1"]' ); ?>
 </div>
 
+
 <?php get_footer(); ?>

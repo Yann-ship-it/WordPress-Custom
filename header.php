@@ -18,11 +18,6 @@ wp_nav_menu(array(
   'container' => 'nav'
 ));
 ?>
-  <div class="burger">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-  </div>
   </div>
     <section class="hero">
     </section>

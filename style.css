@@ -4,6 +4,16 @@ Description: Thème personnalisé pour le site du Blog
 Version: 0.1
 Author: Yann
 */
+.welcome {
+  padding: 5vh 0 5vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
 * {
   font-family: "Kanit", sans-serif;
 }
@@ -75,21 +85,33 @@ header div nav ul li a {
   text-transform: uppercase;
   color: #D6CDCC;
 }
-header div .burger {
-  flex-direction: column;
-  margin: 0;
-  width: 25px;
-  height: 20px;
-  cursor: pointer;
-  display: none;
-}
-header div .line {
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  border-radius: 1px;
-}
 
+@media screen and (max-width: 1200px) {
+  header div nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-end;
+    white-space: nowrap;
+    padding: 0;
+  }
+  nav.menu:nth-child(1) > ul:nth-child(1) {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header div {
+    flex-direction: column;
+  }
+  header div nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    white-space: nowrap;
+    padding: 0;
+  }
+}
 .hero {
   background: url(http://localhost:8888/wordpress/wp-content/uploads/2023/02/italian-cuisine-47-1440x600-1.jpg);
   width: 100%;
@@ -171,6 +193,10 @@ header div .line {
   color: #111D1D;
 }
 
+.map-text {
+  padding: 1vh;
+}
+
 footer {
   background-color: #111D1D;
 }
@@ -183,7 +209,7 @@ footer nav ul {
   list-style: none;
   padding: 0;
   display: flex;
-  width: 30%;
+  width: 50%;
   justify-content: space-between;
 }
 footer nav ul li a {
